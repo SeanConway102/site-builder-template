@@ -26,8 +26,8 @@ export function CtaSection({ section }: { section: SectionData }) {
             href={ctaItem.link}
             className="inline-flex items-center justify-center rounded-md px-8 py-3 text-base font-medium transition-opacity hover:opacity-90"
             style={{
-              backgroundColor: "var(--site-primary, var(--primary))",
-              color: "var(--site-background, var(--primary-foreground))",
+              backgroundColor: "var(--primary)",
+              color: "var(--primary-foreground)",
             }}
           >
             {ctaItem.title || "Get Started"}

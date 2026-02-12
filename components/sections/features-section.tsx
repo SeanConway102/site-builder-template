@@ -30,7 +30,7 @@ export function FeaturesSection({ section }: { section: SectionData }) {
       {section.items && section.items.length > 0 && (
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {section.items.map((item, i) => (
-            <div key={item._key || i} className="flex flex-col items-start gap-4 rounded-lg border border-[var(--site-border,var(--border))] p-6">
+            <div key={item._key || i} className="flex flex-col items-start gap-4 rounded-lg border border-[var(--border)] p-6">
               {item.image && (
                 <Image
                   src={urlFor(item.image).width(400).height(300).url()}

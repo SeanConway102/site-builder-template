@@ -22,7 +22,7 @@ export function SiteHeader({ businessName, logo, navigation }: SiteHeaderProps) 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-[var(--site-border,var(--border))] bg-[var(--site-background,var(--background))]/95 backdrop-blur supports-[backdrop-filter]:bg-[var(--site-background,var(--background))]/60">
+    <header className="sticky top-0 z-50 w-full border-b border-[var(--border)] bg-[var(--background)]/95 backdrop-blur supports-[backdrop-filter]:bg-[var(--background)]/60">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
           {logo ? (
@@ -35,11 +35,11 @@ export function SiteHeader({ businessName, logo, navigation }: SiteHeaderProps) 
               priority
             />
           ) : businessName ? (
-            <span className="text-xl font-bold text-[var(--site-foreground,var(--foreground))]">
+            <span className="text-xl font-bold text-[var(--foreground)]">
               {businessName}
             </span>
           ) : (
-            <span className="text-xl font-bold text-[var(--site-foreground,var(--foreground))]">
+            <span className="text-xl font-bold text-[var(--foreground)]">
               Site Name
             </span>
           )}
@@ -54,7 +54,7 @@ export function SiteHeader({ businessName, logo, navigation }: SiteHeaderProps) 
                 <Link
                   key={item.slug}
                   href={href}
-                  className="text-sm font-medium text-[var(--site-foreground,var(--foreground))]/70 transition-colors hover:text-[var(--site-foreground,var(--foreground))]"
+                  className="text-sm font-medium text-[var(--foreground)]/70 transition-colors hover:text-[var(--foreground)]"
                 >
                   {item.title}
                 </Link>
@@ -66,7 +66,7 @@ export function SiteHeader({ businessName, logo, navigation }: SiteHeaderProps) 
         {/* Mobile Menu Button */}
         {navigation && navigation.length > 0 && (
           <button
-            className="inline-flex items-center justify-center rounded-md p-2 text-[var(--site-foreground,var(--foreground))] md:hidden"
+            className="inline-flex items-center justify-center rounded-md p-2 text-[var(--foreground)] md:hidden"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileMenuOpen}
@@ -79,7 +79,7 @@ export function SiteHeader({ businessName, logo, navigation }: SiteHeaderProps) 
       {/* Mobile Navigation */}
       {mobileMenuOpen && navigation && navigation.length > 0 && (
         <nav
-          className="border-t border-[var(--site-border,var(--border))] bg-[var(--site-background,var(--background))] md:hidden"
+          className="border-t border-[var(--border)] bg-[var(--background)] md:hidden"
           aria-label="Mobile navigation"
         >
           <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
@@ -89,7 +89,7 @@ export function SiteHeader({ businessName, logo, navigation }: SiteHeaderProps) 
                 <Link
                   key={item.slug}
                   href={href}
-                  className="block py-2 text-sm font-medium text-[var(--site-foreground,var(--foreground))]/70 transition-colors hover:text-[var(--site-foreground,var(--foreground))]"
+                  className="block py-2 text-sm font-medium text-[var(--foreground)]/70 transition-colors hover:text-[var(--foreground)]"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.title}

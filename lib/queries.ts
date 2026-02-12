@@ -63,9 +63,6 @@ export const siteSettingsQuery = `*[_type == "siteSettings"][0] {
   }
 }`
 
-// Styling system
-export const stylingSystemQuery = `*[_type == "stylingSystem"][0]`
-
 // Blog posts
 export const allBlogPostsQuery = `*[_type == "blogPost"] | order(publishedAt desc) {
   title,

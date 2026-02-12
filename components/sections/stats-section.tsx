@@ -28,7 +28,7 @@ export function StatsSection({ section }: { section: SectionData }) {
                   className="text-4xl font-bold"
                   style={{
                     fontFamily: "var(--font-heading, inherit)",
-                    color: "var(--site-primary, var(--primary))",
+                    color: "var(--primary)",
                   }}
                 >
                   {item.value}

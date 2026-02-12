@@ -31,15 +31,15 @@ export function SiteFooter({
   const year = new Date().getFullYear()
 
   return (
-    <footer className="border-t border-[var(--site-border,var(--border))] bg-[var(--site-muted,var(--muted))]">
+    <footer className="border-t border-[var(--border)] bg-[var(--muted)]">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-8 md:grid-cols-3">
           {/* Brand & Copyright */}
           <div>
-            <p className="text-lg font-bold text-[var(--site-foreground,var(--foreground))]">
+            <p className="text-lg font-bold text-[var(--foreground)]">
               {businessName || "Site Name"}
             </p>
-            <p className="mt-2 text-sm text-[var(--site-foreground,var(--foreground))]/60">
+            <p className="mt-2 text-sm text-[var(--foreground)]/60">
               {copyrightText || `\u00A9 ${year} ${businessName || "Company"}. All rights reserved.`}
             </p>
           </div>
@@ -47,7 +47,7 @@ export function SiteFooter({
           {/* Navigation */}
           {navigation && navigation.length > 0 && (
             <div>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-[var(--site-foreground,var(--foreground))]">
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-[var(--foreground)]">
                 Pages
               </h3>
               <nav className="mt-4 flex flex-col gap-2" aria-label="Footer navigation">
@@ -57,7 +57,7 @@ export function SiteFooter({
                     <Link
                       key={item.slug}
                       href={href}
-                      className="text-sm text-[var(--site-foreground,var(--foreground))]/60 transition-colors hover:text-[var(--site-foreground,var(--foreground))]"
+                      className="text-sm text-[var(--foreground)]/60 transition-colors hover:text-[var(--foreground)]"
                     >
                       {item.title}
                     </Link>
@@ -70,15 +70,15 @@ export function SiteFooter({
           {/* Contact Info */}
           {contactInfo && (contactInfo.phone || contactInfo.email || contactInfo.address) && (
             <div>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-[var(--site-foreground,var(--foreground))]">
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-[var(--foreground)]">
                 Contact
               </h3>
-              <div className="mt-4 flex flex-col gap-2 text-sm text-[var(--site-foreground,var(--foreground))]/60">
+              <div className="mt-4 flex flex-col gap-2 text-sm text-[var(--foreground)]/60">
                 {contactInfo.phone && <p>{contactInfo.phone}</p>}
                 {contactInfo.email && (
                   <a
                     href={`mailto:${contactInfo.email}`}
-                    className="transition-colors hover:text-[var(--site-foreground,var(--foreground))]"
+                    className="transition-colors hover:text-[var(--foreground)]"
                   >
                     {contactInfo.email}
                   </a>
@@ -91,7 +91,7 @@ export function SiteFooter({
 
         {/* Social Links */}
         {socialLinks && socialLinks.length > 0 && (
-          <div className="mt-8 flex items-center gap-4 border-t border-[var(--site-border,var(--border))] pt-8">
+          <div className="mt-8 flex items-center gap-4 border-t border-[var(--border)] pt-8">
             {socialLinks.map((link, index) => (
               link.url && (
                 <a
@@ -99,7 +99,7 @@ export function SiteFooter({
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-[var(--site-foreground,var(--foreground))]/60 transition-colors hover:text-[var(--site-foreground,var(--foreground))]"
+                  className="text-sm text-[var(--foreground)]/60 transition-colors hover:text-[var(--foreground)]"
                   aria-label={`Visit us on ${link.platform || "social media"}`}
                 >
                   {link.platform || "Link"}

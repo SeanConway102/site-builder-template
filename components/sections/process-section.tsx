@@ -29,8 +29,8 @@ export function ProcessSection({ section }: { section: SectionData }) {
               <div
                 className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-sm font-bold"
                 style={{
-                  backgroundColor: "var(--site-primary, var(--primary))",
-                  color: "var(--site-background, var(--primary-foreground))",
+                  backgroundColor: "var(--primary)",
+                  color: "var(--primary-foreground)",
                 }}
               >
                 {i + 1}
