@@ -141,7 +141,7 @@ function PlaceholderPage() {
       <p className="mt-4 max-w-lg text-lg opacity-60">
         Connect your Sanity CMS to start building. Set your environment variables and create content
         in Sanity Studio at{" "}
-        <code className="rounded bg-[hsl(var(--muted))] px-1.5 py-0.5 text-sm font-mono">
+        <code className="rounded bg-[var(--muted)] px-1.5 py-0.5 text-sm font-mono">
           /studio
         </code>
         .

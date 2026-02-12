@@ -32,10 +32,10 @@ const sectionComponents: Record<string, React.ComponentType<{ section: SectionDa
 function getBackgroundStyles(variant?: string): React.CSSProperties {
   switch (variant) {
     case "muted":
-      return { backgroundColor: "var(--site-muted, hsl(var(--muted)))" }
+      return { backgroundColor: "var(--site-muted, var(--muted))" }
     case "primary":
       return {
-        backgroundColor: "var(--site-primary, hsl(var(--primary)))",
+        backgroundColor: "var(--site-primary, var(--primary))",
         color: "#ffffff",
       }
     case "dark":

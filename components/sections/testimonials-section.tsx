@@ -26,7 +26,7 @@ export function TestimonialsSection({ section }: { section: SectionData }) {
           {section.items.map((item, i) => (
             <blockquote
               key={item._key || i}
-              className="flex flex-col gap-4 rounded-lg border border-[var(--site-border,hsl(var(--border)))] p-6"
+              className="flex flex-col gap-4 rounded-lg border border-[var(--site-border,var(--border))] p-6"
             >
               {item.description && (
                 <p className="flex-1 text-sm italic leading-relaxed opacity-80">

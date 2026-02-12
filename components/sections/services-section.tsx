@@ -27,7 +27,7 @@ export function ServicesSection({ section }: { section: SectionData }) {
           {section.items.map((item, i) => (
             <div
               key={item._key || i}
-              className="group flex flex-col overflow-hidden rounded-lg border border-[var(--site-border,hsl(var(--border)))] transition-shadow hover:shadow-lg"
+              className="group flex flex-col overflow-hidden rounded-lg border border-[var(--site-border,var(--border))] transition-shadow hover:shadow-lg"
             >
               {item.image && (
                 <Image
@@ -54,7 +54,7 @@ export function ServicesSection({ section }: { section: SectionData }) {
                   <Link
                     href={item.link}
                     className="mt-auto pt-4 text-sm font-medium underline-offset-4 hover:underline"
-                    style={{ color: "var(--site-primary, hsl(var(--primary)))" }}
+                    style={{ color: "var(--site-primary, var(--primary))" }}
                   >
                     Learn more
                   </Link>

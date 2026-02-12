@@ -30,7 +30,7 @@ export function ContactSection({ section }: { section: SectionData }) {
           {section.items.map((item, i) => (
             <div
               key={item._key || i}
-              className="rounded-lg border border-[var(--site-border,hsl(var(--border)))] p-6"
+              className="rounded-lg border border-[var(--site-border,var(--border))] p-6"
             >
               {item.icon && (
                 <span className="text-xl" aria-hidden="true">{item.icon}</span>
@@ -50,7 +50,7 @@ export function ContactSection({ section }: { section: SectionData }) {
                 <a
                   href={item.link}
                   className="mt-2 inline-block text-sm font-medium underline-offset-4 hover:underline"
-                  style={{ color: "var(--site-primary, hsl(var(--primary)))" }}
+                  style={{ color: "var(--site-primary, var(--primary))" }}
                 >
                   {item.value || item.link}
                 </a>

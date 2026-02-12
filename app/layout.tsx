@@ -171,8 +171,8 @@ export default async function RootLayout({
           fontFamily: "var(--font-body, var(--font-sans, system-ui, sans-serif))",
           fontSize: "var(--font-base-size, 16px)",
           lineHeight: "var(--font-line-height, 1.5)",
-          backgroundColor: "var(--site-background, hsl(var(--background)))",
-          color: "var(--site-foreground, hsl(var(--foreground)))",
+          backgroundColor: "var(--site-background, var(--background))",
+          color: "var(--site-foreground, var(--foreground))",
         }}
       >
         <SiteHeader

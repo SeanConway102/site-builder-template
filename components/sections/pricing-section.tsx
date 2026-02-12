@@ -25,7 +25,7 @@ export function PricingSection({ section }: { section: SectionData }) {
           {section.items.map((item, i) => (
             <div
               key={item._key || i}
-              className="flex flex-col rounded-lg border border-[var(--site-border,hsl(var(--border)))] p-8"
+              className="flex flex-col rounded-lg border border-[var(--site-border,var(--border))] p-8"
             >
               {item.title && (
                 <h3
@@ -40,7 +40,7 @@ export function PricingSection({ section }: { section: SectionData }) {
                   className="mt-4 text-4xl font-bold"
                   style={{
                     fontFamily: "var(--font-heading, inherit)",
-                    color: "var(--site-primary, hsl(var(--primary)))",
+                    color: "var(--site-primary, var(--primary))",
                   }}
                 >
                   {item.value}
@@ -56,8 +56,8 @@ export function PricingSection({ section }: { section: SectionData }) {
                   href={item.link}
                   className="mt-6 inline-flex items-center justify-center rounded-md px-6 py-2.5 text-sm font-medium transition-opacity hover:opacity-90"
                   style={{
-                    backgroundColor: "var(--site-primary, hsl(var(--primary)))",
-                    color: "var(--site-background, hsl(var(--primary-foreground)))",
+                    backgroundColor: "var(--site-primary, var(--primary))",
+                    color: "var(--site-background, var(--primary-foreground))",
                   }}
                 >
                   Choose Plan

@@ -27,7 +27,7 @@ export function BlogSection({ section }: { section: SectionData }) {
           {section.items.map((item, i) => (
             <article
               key={item._key || i}
-              className="group overflow-hidden rounded-lg border border-[var(--site-border,hsl(var(--border)))]"
+              className="group overflow-hidden rounded-lg border border-[var(--site-border,var(--border))]"
             >
               {item.image && (
                 <Image

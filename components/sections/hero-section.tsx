@@ -49,7 +49,7 @@ export function HeroSection({
               fontWeight: "var(--font-heading-weight, 700)",
               color: bgUrl
                 ? "#ffffff"
-                : "var(--site-foreground, hsl(var(--foreground)))",
+                : "var(--site-foreground, var(--foreground))",
             }}
           >
             {headline}
@@ -61,7 +61,7 @@ export function HeroSection({
             style={{
               color: bgUrl
                 ? "rgba(255,255,255,0.85)"
-                : "var(--site-foreground, hsl(var(--foreground)))",
+                : "var(--site-foreground, var(--foreground))",
               opacity: bgUrl ? 1 : 0.7,
             }}
           >
@@ -74,8 +74,8 @@ export function HeroSection({
               href={ctaLink}
               className="inline-flex items-center justify-center rounded-md px-8 py-3 text-base font-medium transition-opacity hover:opacity-90"
               style={{
-                backgroundColor: "var(--site-primary, hsl(var(--primary)))",
-                color: bgUrl ? "#ffffff" : "var(--site-background, hsl(var(--primary-foreground)))",
+                backgroundColor: "var(--site-primary, var(--primary))",
+                color: bgUrl ? "#ffffff" : "var(--site-background, var(--primary-foreground))",
               }}
             >
               {ctaText}
