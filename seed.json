@@ -1,0 +1,253 @@
+{
+  "documents": [
+    {
+      "_type": "siteSettings",
+      "_id": "siteSettings",
+      "businessName": "{{BUSINESS_NAME}}",
+      "tagline": "{{TAGLINE}}",
+      "navigation": [
+        { "_ref": "page-home", "_type": "reference" },
+        { "_ref": "page-about", "_type": "reference" },
+        { "_ref": "page-services", "_type": "reference" },
+        { "_ref": "page-contact", "_type": "reference" }
+      ],
+      "footer": {
+        "copyrightText": "© 2026 {{BUSINESS_NAME}}. All rights reserved.",
+        "socialLinks": [
+          { "platform": "Facebook", "url": "https://facebook.com" },
+          { "platform": "Twitter", "url": "https://twitter.com" },
+          { "platform": "LinkedIn", "url": "https://linkedin.com" }
+        ]
+      },
+      "contactInfo": {
+        "phone": "{{PHONE}}",
+        "email": "{{EMAIL}}",
+        "address": "{{ADDRESS}}"
+      }
+    },
+    {
+      "_type": "stylingSystem",
+      "_id": "stylingSystem",
+      "colors": {
+        "primary": "oklch(0.55 0.15 250)",
+        "secondary": "oklch(0.70 0.10 180)",
+        "accent": "oklch(0.75 0.15 60)",
+        "background": "oklch(0.99 0 0)",
+        "foreground": "oklch(0.15 0 0)",
+        "muted": "oklch(0.96 0 0)",
+        "border": "oklch(0.90 0 0)",
+        "ring": "oklch(0.55 0.15 250)"
+      },
+      "darkMode": {
+        "primary": "oklch(0.70 0.15 250)",
+        "secondary": "oklch(0.60 0.10 180)",
+        "accent": "oklch(0.70 0.15 60)",
+        "background": "oklch(0.15 0 0)",
+        "foreground": "oklch(0.95 0 0)",
+        "muted": "oklch(0.20 0 0)",
+        "border": "oklch(0.25 0 0)",
+        "ring": "oklch(0.70 0.15 250)"
+      },
+      "typography": {
+        "headingFont": "Inter",
+        "bodyFont": "Inter",
+        "baseSize": 16,
+        "scaleRatio": 1.25,
+        "lineHeight": 1.5,
+        "headingWeight": "700"
+      },
+      "wcagLevel": "AA",
+      "cssVars": {
+        "root": "",
+        "dark": ""
+      }
+    },
+    {
+      "_type": "page",
+      "_id": "page-home",
+      "title": "Home",
+      "slug": { "current": "home", "_type": "slug" },
+      "pageType": "home",
+      "hero": {
+        "headline": "{{HERO_HEADLINE}}",
+        "subheadline": "{{HERO_SUBHEADLINE}}",
+        "ctaText": "Get Started",
+        "ctaLink": "/contact"
+      },
+      "sections": [
+        {
+          "_key": "features-1",
+          "sectionId": "features",
+          "sectionType": "features",
+          "heading": "Why Choose Us",
+          "subheading": "Everything you need to succeed",
+          "backgroundVariant": "default",
+          "items": [
+            {
+              "_key": "f1",
+              "title": "{{FEATURE_1_TITLE}}",
+              "description": "{{FEATURE_1_DESC}}"
+            },
+            {
+              "_key": "f2",
+              "title": "{{FEATURE_2_TITLE}}",
+              "description": "{{FEATURE_2_DESC}}"
+            },
+            {
+              "_key": "f3",
+              "title": "{{FEATURE_3_TITLE}}",
+              "description": "{{FEATURE_3_DESC}}"
+            }
+          ]
+        },
+        {
+          "_key": "stats-1",
+          "sectionId": "stats",
+          "sectionType": "stats",
+          "heading": "By the Numbers",
+          "backgroundVariant": "muted",
+          "items": [
+            { "_key": "s1", "title": "Happy Clients", "value": "500+" },
+            { "_key": "s2", "title": "Projects Completed", "value": "1,200+" },
+            { "_key": "s3", "title": "Years Experience", "value": "10+" },
+            { "_key": "s4", "title": "Team Members", "value": "25+" }
+          ]
+        },
+        {
+          "_key": "cta-1",
+          "sectionId": "cta",
+          "sectionType": "cta",
+          "heading": "Ready to Get Started?",
+          "subheading": "Contact us today for a free consultation.",
+          "backgroundVariant": "primary",
+          "items": [
+            { "_key": "c1", "title": "Contact Us", "link": "/contact" }
+          ]
+        }
+      ],
+      "seo": {
+        "metaTitle": "{{BUSINESS_NAME}} - {{TAGLINE}}",
+        "metaDescription": "{{META_DESCRIPTION}}"
+      }
+    },
+    {
+      "_type": "page",
+      "_id": "page-about",
+      "title": "About",
+      "slug": { "current": "about", "_type": "slug" },
+      "pageType": "about",
+      "hero": {
+        "headline": "About Us",
+        "subheadline": "Learn more about our story and mission."
+      },
+      "sections": [
+        {
+          "_key": "about-1",
+          "sectionId": "about",
+          "sectionType": "about",
+          "heading": "Our Story",
+          "subheading": "{{ABOUT_SUBHEADING}}",
+          "backgroundVariant": "default"
+        },
+        {
+          "_key": "team-1",
+          "sectionId": "team",
+          "sectionType": "team",
+          "heading": "Meet the Team",
+          "backgroundVariant": "muted",
+          "items": [
+            { "_key": "t1", "title": "{{TEAM_1_NAME}}", "value": "{{TEAM_1_ROLE}}", "description": "{{TEAM_1_BIO}}" },
+            { "_key": "t2", "title": "{{TEAM_2_NAME}}", "value": "{{TEAM_2_ROLE}}", "description": "{{TEAM_2_BIO}}" }
+          ]
+        }
+      ],
+      "seo": {
+        "metaTitle": "About - {{BUSINESS_NAME}}",
+        "metaDescription": "Learn about {{BUSINESS_NAME}} and our mission."
+      }
+    },
+    {
+      "_type": "page",
+      "_id": "page-services",
+      "title": "Services",
+      "slug": { "current": "services", "_type": "slug" },
+      "pageType": "services",
+      "hero": {
+        "headline": "Our Services",
+        "subheadline": "Professional solutions tailored to your needs."
+      },
+      "sections": [
+        {
+          "_key": "services-1",
+          "sectionId": "services",
+          "sectionType": "services",
+          "heading": "What We Offer",
+          "backgroundVariant": "default",
+          "items": [
+            { "_key": "sv1", "title": "{{SERVICE_1_TITLE}}", "description": "{{SERVICE_1_DESC}}" },
+            { "_key": "sv2", "title": "{{SERVICE_2_TITLE}}", "description": "{{SERVICE_2_DESC}}" },
+            { "_key": "sv3", "title": "{{SERVICE_3_TITLE}}", "description": "{{SERVICE_3_DESC}}" }
+          ]
+        },
+        {
+          "_key": "process-1",
+          "sectionId": "process",
+          "sectionType": "process",
+          "heading": "Our Process",
+          "backgroundVariant": "muted",
+          "items": [
+            { "_key": "p1", "title": "Discovery", "description": "We learn about your needs and goals." },
+            { "_key": "p2", "title": "Planning", "description": "We create a detailed strategy and timeline." },
+            { "_key": "p3", "title": "Execution", "description": "We implement the solution with regular check-ins." },
+            { "_key": "p4", "title": "Delivery", "description": "We deliver and provide ongoing support." }
+          ]
+        }
+      ],
+      "seo": {
+        "metaTitle": "Services - {{BUSINESS_NAME}}",
+        "metaDescription": "Explore the professional services offered by {{BUSINESS_NAME}}."
+      }
+    },
+    {
+      "_type": "page",
+      "_id": "page-contact",
+      "title": "Contact",
+      "slug": { "current": "contact", "_type": "slug" },
+      "pageType": "contact",
+      "hero": {
+        "headline": "Contact Us",
+        "subheadline": "We'd love to hear from you. Reach out today."
+      },
+      "sections": [
+        {
+          "_key": "contact-1",
+          "sectionId": "contact",
+          "sectionType": "contact",
+          "heading": "Get in Touch",
+          "backgroundVariant": "default",
+          "items": [
+            { "_key": "ci1", "title": "Email", "description": "Send us an email anytime.", "link": "mailto:{{EMAIL}}", "value": "{{EMAIL}}" },
+            { "_key": "ci2", "title": "Phone", "description": "Call us during business hours.", "value": "{{PHONE}}" },
+            { "_key": "ci3", "title": "Address", "description": "{{ADDRESS}}" }
+          ]
+        },
+        {
+          "_key": "faq-1",
+          "sectionId": "faq",
+          "sectionType": "faq",
+          "heading": "Frequently Asked Questions",
+          "backgroundVariant": "muted",
+          "items": [
+            { "_key": "fq1", "title": "What are your business hours?", "description": "We're available Monday through Friday, 9am to 5pm." },
+            { "_key": "fq2", "title": "Do you offer free consultations?", "description": "Yes! Contact us to schedule a free initial consultation." },
+            { "_key": "fq3", "title": "What is your turnaround time?", "description": "Project timelines vary, but we'll provide a detailed estimate upfront." }
+          ]
+        }
+      ],
+      "seo": {
+        "metaTitle": "Contact - {{BUSINESS_NAME}}",
+        "metaDescription": "Get in touch with {{BUSINESS_NAME}}. We're here to help."
+      }
+    }
+  ]
+}
